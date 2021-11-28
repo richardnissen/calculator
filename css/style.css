@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#screen {
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    align-items: flex-end;
+}
+#screen p {
+    margin: 2px;
+}
+
+#button-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+#clear {
+    grid-column: span 2;
+    width: 110px;
+}
+#delete {
+    grid-column: span 2;
+    width: 110px;
+}
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}
